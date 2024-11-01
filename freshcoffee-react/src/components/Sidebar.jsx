@@ -1,7 +1,10 @@
+import useCafeteria from '../hooks/useCafeteria'
 import Categoria from './Categoria'
-import { categorias } from '../data/categorias'
 
 export default function Sidebar() {
+
+    const { categorias } = useCafeteria()
+
     return (
         <asied className="md:w-72">
             <div className="p-4">
